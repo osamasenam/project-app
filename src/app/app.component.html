@@ -1,0 +1,5 @@
+<app-header (titleEvent)="handleTitle($event)"></app-header>
+<div>
+  <app-recipes *ngIf="titleClicked==='Recipe'"></app-recipes>
+  <app-shopping-list *ngIf="titleClicked==='List'"></app-shopping-list>
+</div>
